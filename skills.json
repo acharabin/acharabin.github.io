@@ -1,0 +1,76 @@
+[{
+        "name": "Leadership",
+        "icon": "https://img.icons8.com/fluency/48/000000/group.png"
+    },{
+        "name": "Management",
+        "icon": "https://img.icons8.com/fluency/48/000000/management.png"
+    },
+    {
+        "name": "OKRs",
+        "icon": "https://img.icons8.com/fluency/48/000000/goal.png"
+    },
+    {
+        "name": "Asana",
+        "icon": "https://img.icons8.com/fluency/48/000000/workflow.png"
+    },
+    {
+        "name": "ML Dev",
+        "icon": "https://img.icons8.com/fluency/48/000000/learning.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/fluency/48/000000/python.png"
+    },
+    {
+        "name": "SageMaker",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "Pytorch",
+        "icon": "https://img.icons8.com/color/48/000000/artificial-intelligence.png"
+    },
+    {
+        "name": "Pipelines",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "Databases",
+        "icon": "https://img.icons8.com/fluency/48/000000/database.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+    },
+    {
+        "name": "Redshift",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "ML Ops",
+        "icon": "https://img.icons8.com/fluency/48/000000/programming.png"
+    },
+    {
+        "name": "Lambda",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "Git",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+        "name": "Linux",
+        "icon": "https://img.icons8.com/color/48/000000/linux.png"
+    },
+    {
+        "name": "Analytics",
+        "icon": "https://img.icons8.com/fluency/48/000000/analytics.png"
+    },
+    {
+        "name": "Tableau",
+        "icon": "https://img.icons8.com/color/48/000000/tableau-software.png"
+    },
+    {
+        "name": "R",
+        "icon": "https://img.icons8.com/color/48/000000/analytics.png"
+    }
+]
