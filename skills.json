@@ -14,6 +14,10 @@
         "icon": "https://img.icons8.com/fluency/48/000000/workflow.png"
     },
     {
+        "name": "",
+        "icon": "/assets/images/invisible.png"
+    },
+    {
         "name": "ML Dev",
         "icon": "https://img.icons8.com/fluency/48/000000/learning.png"
     },
@@ -46,6 +50,14 @@
         "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
     },
     {
+        "name": "",
+        "icon": "/assets/images/invisible.png"
+    },
+    {
+        "name": "",
+        "icon": "/assets/images/invisible.png"
+    },
+    {
         "name": "ML Ops",
         "icon": "https://img.icons8.com/fluency/48/000000/programming.png"
     },
@@ -62,6 +74,10 @@
         "icon": "https://img.icons8.com/color/48/000000/linux.png"
     },
     {
+        "name": "",
+        "icon": "/assets/images/invisible.png"
+    },
+    {
         "name": "Analytics",
         "icon": "https://img.icons8.com/fluency/48/000000/analytics.png"
     },
@@ -72,5 +88,13 @@
     {
         "name": "R",
         "icon": "https://img.icons8.com/color/48/000000/analytics.png"
+    },
+    {
+        "name": "",
+        "icon": "/assets/images/invisible.png"
+    },
+    {
+        "name": "",
+        "icon": "/assets/images/invisible.png"
     }
 ]
