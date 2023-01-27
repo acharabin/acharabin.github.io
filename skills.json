@@ -1,100 +1,125 @@
 [{
         "name": "Leadership",
-        "icon": "https://img.icons8.com/fluency/48/000000/group.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/group.png",
+        "iconprefix": ""
     },{
         "name": "Management",
-        "icon": "https://img.icons8.com/fluency/48/000000/management.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/management.png",
+        "iconprefix": ""
     },
     {
         "name": "OKRs",
-        "icon": "https://img.icons8.com/fluency/48/000000/goal.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/goal.png",
+        "iconprefix": ""
     },
     {
         "name": "Asana",
-        "icon": "https://img.icons8.com/fluency/48/000000/workflow.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/workflow.png",
+        "iconprefix": ""
     },
     {
         "name": "",
-        "icon": "/assets/images/invisible.png"
+        "icon": "/assets/images/invisible.png",
+        "iconprefix": "."
     },
     {
         "name": "ML Dev",
-        "icon": "https://img.icons8.com/fluency/48/000000/learning.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/learning.png",
+        "iconprefix": ""
     },
     {
         "name": "Python",
-        "icon": "https://img.icons8.com/fluency/48/000000/python.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/python.png",
+        "iconprefix": ""
     },
     {
         "name": "SageMaker",
-        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+        "iconprefix": ""
     },
     {
         "name": "Pytorch",
-        "icon": "https://img.icons8.com/color/48/000000/artificial-intelligence.png"
+        "icon": "https://img.icons8.com/color/48/000000/artificial-intelligence.png",
+        "iconprefix": ""
     },
     {
         "name": "Pipelines",
-        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+        "iconprefix": ""
     },
     {
         "name": "Databases",
-        "icon": "https://img.icons8.com/fluency/48/000000/database.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/database.png",
+        "iconprefix": ""
     },
     {
         "name": "PostgreSQL",
-        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png",
+        "iconprefix": ""
     },
     {
         "name": "Redshift",
-        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+        "iconprefix": ""
     },
     {
         "name": "",
-        "icon": "/assets/images/invisible.png"
+        "icon": "/assets/images/invisible.png",
+        "iconprefix": "."
     },
     {
         "name": "",
-        "icon": "/assets/images/invisible.png"
+        "icon": "/assets/images/invisible.png",
+        "iconprefix": "."
     },
     {
         "name": "ML Ops",
-        "icon": "https://img.icons8.com/fluency/48/000000/programming.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/programming.png",
+        "iconprefix": ""
     },
     {
         "name": "Lambda",
-        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+        "iconprefix": ""
     },
     {
         "name": "Git",
-        "icon": "https://img.icons8.com/color/48/000000/git.png"
+        "icon": "https://img.icons8.com/color/48/000000/git.png",
+        "iconprefix": ""
     },
     {
         "name": "Linux",
-        "icon": "https://img.icons8.com/color/48/000000/linux.png"
+        "icon": "https://img.icons8.com/color/48/000000/linux.png",
+        "iconprefix": ""
     },
     {
         "name": "",
-        "icon": "/assets/images/invisible.png"
+        "icon": "/assets/images/invisible.png",
+        "iconprefix": "."
     },
     {
         "name": "Analytics",
-        "icon": "https://img.icons8.com/fluency/48/000000/analytics.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/analytics.png",
+        "iconprefix": ""
     },
     {
         "name": "Tableau",
-        "icon": "https://img.icons8.com/color/48/000000/tableau-software.png"
+        "icon": "https://img.icons8.com/color/48/000000/tableau-software.png",
+        "iconprefix": ""
     },
     {
         "name": "R",
-        "icon": "https://img.icons8.com/color/48/000000/analytics.png"
+        "icon": "https://img.icons8.com/color/48/000000/analytics.png",
+        "iconprefix": ""
     },
     {
         "name": "",
-        "icon": "/assets/images/invisible.png"
+        "icon": "/assets/images/invisible.png",
+        "iconprefix": "."
     },
     {
         "name": "",
-        "icon": "/assets/images/invisible.png"
+        "icon": "/assets/images/invisible.png",
+        "iconprefix": "."
     }
 ]
