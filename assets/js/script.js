@@ -119,7 +119,12 @@ function showProjects(projects) {
           <p>${project.desc}</p>
           <div class="btns">
             <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <!-- <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a> -->
+            <div id="seashell" class="image"><img draggable="false" class="tilt" src=${project.buttonimage} alt="" style="width: 50px; height: 40px;" id="seashell">
+            <!-- src="./assets/images/seashell.png" <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a> -->
+            <audio id="mySoundClip2">
+                <source src="assets/audio/audio_0_seashells2.wav" type="audio/wav">
+            </audio>
+            </div>
           </div>
         </div>
       </div>
@@ -154,6 +159,13 @@ fetchData().then(data => {
 
 fetchData("projects").then(data => {
     showProjects(data);
+    var audio2 = $("#mySoundClip2")[0];
+    $("#seashell").mouseenter(function() {
+    audio2.play();
+    })
+    $("#seashell").mouseout(function() {
+    audio2.pause();
+    });
 });
 
 // <!-- tilt js effect starts -->
