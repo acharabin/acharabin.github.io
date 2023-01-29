@@ -4,7 +4,7 @@
     "desc": "A scaleable approach to cloning voices using Tacotron2 and WaveGlow model architectures.",
     "image": "tacotron2",
     "category": "Voice AI",
-    "buttonimage":  "./assets/images/seashell.PNG",
+    "buttonimage":  "/assets/images/seashell.PNG",
     "links": {
       "view": "https://github.com/acharabin/DeepLearningExamples/tree/master/PyTorch/SpeechSynthesis/Tacotron2",
       "code": "https://github.com/acharabin/DeepLearningExamples/tree/master/PyTorch/SpeechSynthesis/Tacotron2"
@@ -15,7 +15,7 @@
     "desc": "Deployed models that make marketplace pricing personalized, seamless, and intelligent. Complete the form to get a recommended budget and see how many responses you can expect to receive.",
     "image": "marketplacepricingreco",
     "category": "Machine Learning",
-    "buttonimage":  "./assets/images/invisible.PNG",
+    "buttonimage":  "/assets/images/invisible.PNG",
     "links": {
       "view": "https://www.voices.com/jobs/post_job",
       "code": "https://github.com/acharabin"
@@ -26,7 +26,7 @@
     "desc": "Analysis of the interactions between voice talent and clients across the globe using Tableau.",
     "image": "project3",
     "category": "Analytics",
-    "buttonimage":  "./assets/images/invisible.PNG",
+    "buttonimage":  "/assets/images/invisible.PNG",
     "links": {
       "view": "https://www.linkedin.com/pulse/distance-matters-andrew-charabin/",
       "code": "https://www.linkedin.com/pulse/distance-matters-andrew-charabin/"
