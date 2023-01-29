@@ -1,7 +1,7 @@
 [
   {
     "name": "Voice Cloning with Tacotron2",
-    "desc": "A scaleable approach to cloning voices using Tacotron2 and WaveGlow model architectures.",
+    "desc": "A scaleable approach to cloning voices using Tacotron2 and WaveGlow model architectures. Listen to an example inference by hovering over the seashell.",
     "image": "tacotron2",
     "category": "Voice AI",
     "buttonimage":  "/assets/images/seashell.png",
