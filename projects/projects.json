@@ -11,17 +11,6 @@
     }
   },
   {
-    "name": "Analytics for Working Professionals",
-    "desc": "Developed and presented a 4-session course to improve organizational productivity by cultivating analytical fluency.",
-    "image": "analyticslearnings",
-    "category": "Analytics",
-    "buttonimage":  "/assets/images/invisible.png",
-    "links": {
-      "view": "https://drive.google.com/drive/folders/1Y2K6rAXjJCPZDNtOHK0SUMhUwmX8eerE?usp=share_link",
-      "code": ""
-    }
-  },
-  {
     "name": "Marketplace Pricing Reco. Engine",
     "desc": "Deployed models that make marketplace pricing personalized, seamless, and intelligent. Complete the form to get a recommended budget and see how many responses you can expect to receive.",
     "image": "marketplacepricingreco",
@@ -30,6 +19,17 @@
     "links": {
       "view": "https://www.voices.com/jobs/post_job",
       "code": "https://github.com/acharabin"
+    }
+  },
+  {
+    "name": "Analytics for Working Professionals",
+    "desc": "Developed and presented a 4-session course to improve organizational productivity by cultivating analytical fluency.",
+    "image": "analyticslearnings",
+    "category": "Analytics",
+    "buttonimage":  "/assets/images/invisible.png",
+    "links": {
+      "view": "https://drive.google.com/drive/folders/1Y2K6rAXjJCPZDNtOHK0SUMhUwmX8eerE?usp=share_link",
+      "code": ""
     }
   },
   {
