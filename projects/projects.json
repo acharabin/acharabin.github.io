@@ -1,13 +1,24 @@
 [
   {
     "name": "Voice Cloning with Tacotron2",
-    "desc": "A scaleable approach to cloning voices using Tacotron2 and WaveGlow model architectures. Listen to an example inference by hovering over the seashell.",
+    "desc": "A scaleable approach to cloning voices using Tacotron2 and Univnet or WaveGlow model architectures.",
     "image": "tacotron2",
     "category": "Voice AI",
-    "buttonimage":  "/assets/images/seashell.png",
+    "buttonimage":  "/assets/images/invisible.png",
     "links": {
       "view": "https://github.com/acharabin/DeepLearningExamples/tree/master/PyTorch/SpeechSynthesis/Tacotron2",
-      "code": "https://github.com/acharabin/DeepLearningExamples/tree/master/PyTorch/SpeechSynthesis/Tacotron2"
+      "code": ""
+    }
+  },
+  {
+    "name": "AC Voice Flask API",
+    "desc": "API developed using the Flask framework to serve inferences from Tacotron2 and Univnet models. See the google colab document to generate speech from my voice model based on input text.",
+    "image": "playacvoice",
+    "category": "Voice AI",
+    "buttonimage":  "/assets/images/projects/github2.png",
+    "links": {
+      "view": "https://colab.research.google.com/drive/1Y_gMsNxuAuGC_WfQZB7xtO1MpVr36uQc#scrollTo=z8a2GeLRHRYR",
+      "code": "https://github.com/acharabin/Tacotron2-Text-to-Speech-API"
     }
   },
   {
@@ -18,7 +29,7 @@
     "buttonimage":  "/assets/images/invisible.png",
     "links": {
       "view": "https://www.voices.com/jobs/post_job",
-      "code": "https://github.com/acharabin"
+      "code": ""
     }
   },
   {
