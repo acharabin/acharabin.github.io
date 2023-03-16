@@ -1,7 +1,7 @@
 [
   {
     "name": "Text to Speech Tool with My Voice",
-    "desc": "Add custom text in the the linked google colab sheet and generate speech from my voice model. Inference are served by a flask API and using Tacotron2 and Univnet models to produce speech from text.",
+    "desc": "Add custom text in the the linked google colab sheet and generate speech from my voice model. Inferences are served by a flask API using Tacotron2 and Univnet models to produce speech from text.",
     "image": "playacvoice",
     "category": "Voice AI",
     "buttonimage":  "/assets/images/projects/github2.png",
