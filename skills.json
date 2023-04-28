@@ -43,8 +43,8 @@
         "iconprefix": ""
     },
     {
-        "name": "Pipelines",
-        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+        "name": "TensorFlow",
+        "icon": "https://img.icons8.com/color/48/000000/tensorflow.png",
         "iconprefix": ""
     },
     {
@@ -93,9 +93,9 @@
         "iconprefix": ""
     },
     {
-        "name": "",
-        "icon": "/assets/images/invisible.png",
-        "iconprefix": "."
+        "name": "Docker",
+        "icon": "https://img.icons8.com/color/48/000000/docker.png",
+        "iconprefix": ""
     },
     {
         "name": "Analytics",
@@ -113,9 +113,9 @@
         "iconprefix": ""
     },
     {
-        "name": "",
-        "icon": "/assets/images/invisible.png",
-        "iconprefix": "."
+        "name": "Experiments",
+        "icon": "https://img.icons8.com/color/48/000000/test-tube.png",
+        "iconprefix": ""
     },
     {
         "name": "",
