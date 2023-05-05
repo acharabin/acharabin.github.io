@@ -2,7 +2,7 @@
   {
     "name": "NFL Down Outcome Prediction",
     "desc": "A neural network framework to model the underlying markov chain process in NFL down outcomes.",
-    "image": "nflpredictions",
+    "image": "nfllogo",
     "category": "Machine Learning",
     "buttonimage":  "/assets/images/invisible.png",
     "links": {
