@@ -1,5 +1,16 @@
 [
   {
+    "name": "Baysian Modelling of 2023 WTA Match Outcomes",
+    "desc": "Ranking WTA players by using a Bayesian logistic model fit using a Monte Carlo Markov Chain (MCMC).",
+    "image": "wta_player_rankings_by_model",
+    "category": "Analytics",
+    "buttonimage":  "/assets/images/invisible.png",
+    "links": {
+      "view": "https://github.com/acharabin/Baysian-Modelling-of-2023-WTA-Match-Outcomes",
+      "code": ""
+    }
+  },
+  {
     "name": "NFL Down Outcome Prediction",
     "desc": "A neural network framework to model the underlying markov chain process in NFL down outcomes.",
     "image": "nfllogo",
