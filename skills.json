@@ -43,8 +43,8 @@
         "iconprefix": ""
     },
     {
-        "name": "TensorFlow",
-        "icon": "https://img.icons8.com/color/48/000000/tensorflow.png",
+        "name": "Google Cloud",
+        "icon": "https://img.icons8.com/color/48/000000/google-cloud.png",
         "iconprefix": ""
     },
     {
@@ -63,9 +63,9 @@
         "iconprefix": ""
     },
     {
-        "name": "",
-        "icon": "/assets/images/invisible.png",
-        "iconprefix": "."
+        "name": "Stored Procedures",
+        "icon": "https://img.icons8.com/color/48/000000/sql.png",
+        "iconprefix": ""
     },
     {
         "name": "",
@@ -93,9 +93,9 @@
         "iconprefix": ""
     },
     {
-        "name": "Docker",
-        "icon": "https://img.icons8.com/color/48/000000/docker.png",
-        "iconprefix": ""
+        "name": "",
+        "icon": "/assets/images/invisible.png",
+        "iconprefix": "."
     },
     {
         "name": "Analytics",
@@ -118,8 +118,8 @@
         "iconprefix": ""
     },
     {
-        "name": "",
-        "icon": "/assets/images/invisible.png",
-        "iconprefix": "."
+        "name": "Power BI",
+        "icon": "https://img.icons8.com/color/48/000000/power-bi.png",
+        "iconprefix": ""
     }
 ]
