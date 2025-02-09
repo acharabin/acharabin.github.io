@@ -1,6 +1,6 @@
 [
   {
-    "name": "Baysian Modelling of WTA Matches",
+    "name": "Bayesian Modelling of WTA Matches",
     "desc": "Ranking WTA players by using a Bayesian logistic model fit using a Monte Carlo Markov Chain (MCMC).",
     "image": "wta_player_rankings_by_model",
     "category": "Analytics",
