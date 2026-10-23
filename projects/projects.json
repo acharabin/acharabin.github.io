@@ -2,7 +2,7 @@
   {
     "name": "Toronto Waterfront Marathon Assistant",
     "desc": "A local conversational assistant for the 2026 Toronto Waterfront Half Marathon, combining runner result lookups with answers sourced from the event help center.",
-    "imagePath": "/assets/images/projects/toronto-marathon-2.jpg",
+    "imagePath": "/assets/images/projects/toronto-waterfront-marathon.png",
     "category": "Machine Learning",
     "buttonimage": "/assets/images/invisible.png",
     "links": {
