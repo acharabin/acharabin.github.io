@@ -4,7 +4,7 @@
     "desc": "An authenticated OpenAI-powered voice assistant for natural conversations. Chat with the assistant and hear replies spoken in a custom synthesized voice; the service also provides a protected MCP endpoint for integrations.",
     "imagePath": "/assets/images/projects/ac-voice-conversational-app.png",
     "category": "Voice AI",
-    "buttonimage": "/assets/images/invisible.png",
+    "buttonimage": "/assets/images/projects/github.png",
     "links": {
       "view": "https://138.197.152.248/",
       "code": "https://github.com/acharabin/voice-mcp-server"
