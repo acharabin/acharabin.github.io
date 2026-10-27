@@ -1,7 +1,7 @@
 [
   {
-    "name": "Conversational Voice Assistant",
-    "desc": "An authenticated OpenAI-powered conversational app designed to make it feel like you’re talking with Andrew. Chat by text and hear replies in his synthesized voice; the service also provides a protected MCP endpoint for integrations.",
+    "name": "Cloned Voice Chat App",
+    "desc": "Chat with Andrew. An OpenAI-powered conversational app backed by a cloned voice MCP designed to simulate conversations with Andrew.",
     "imagePath": "/assets/images/projects/ac-voice-conversational-app.png",
     "category": "Voice AI",
     "buttonimage": "/assets/images/projects/github2.png",
