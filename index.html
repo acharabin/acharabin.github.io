@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="andrew charabin, portfolio, data science, voice ai, analytics, machine learning, personal portfolio website" />
-    <meta name="description" content="Welcome to Andrew's Portfolio. Senior Manager, Data Science & Analytics" />
+    <meta name="description" content="Andrew Charabin is a data science and engineering leader focused on analytics, AI, and business growth.">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/AClogo.png" type="image/x-png">
+    <link rel="icon" href="./assets/images/AClogo.png" type="image/png">
     <title>Andrew's Portfolio</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
 <!-- pre loader -->
 <!-- <div class="loader-container">
@@ -27,12 +25,12 @@
 <header>
     <!--<a href="/" class="logo">-->
         <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/AClogo.png" width="20 px" height=auto>
+        <a href="#home" aria-label="Andrew Charabin home"><img class="tilt" src="./assets/images/AClogo.png" width="40" height="40" alt="Andrew Charabin logo"></a>
         </div>
         <!--</a>-->
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
+        <button id="menu" class="fas fa-bars" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation"></button>
+        <nav id="site-navigation" class="navbar" aria-label="Main navigation">
             <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -43,45 +41,41 @@
             </ul>
         </nav>
 </header>
-<!--<li><a href="#contact">Contact</a></li> -->
+<!-- navbar ends -->
 
-<!-- navbar ends
-
+<main id="main-content">
 
 <!-- hero section starts -->
 <section class="home" id="home">
     <div id="particles-js"></div>
     <div class="content">
-    <h2>Hi There,<br/> I'm Andrew <span>Charabin</span></h2>
+    <h1>Hi there,<br>I'm Andrew <span>Charabin</span></h1>
     <p>My interests are <span class="typing-text"></span></p>
     <a href="#about" class="btn"><span>About Me</span>
       <i class="fas fa-arrow-circle-down"></i>
     </a>
     <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/acharabin/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="github" aria-label="GitHub" href="https://github.com/acharabin" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="medium" aria-label="medium" href="https://medium.com/@andrewcharabin" target="_blank"><i class="fab fa-medium"></i></a></li>
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/acharabin/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/acharabin" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+          <li><a class="medium" aria-label="Medium" href="https://medium.com/@andrewcharabin" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a></li>
         </ul>
       </div>
     </div>
 <!--<div class="image">-->
 <!--    <img draggable="false" class="tilt" src="./assets/images/ACbitmoji3.jpg" alt="" id="bitmoji">-->
 <!--</div>-->
-    <audio id="mySoundClip">
-	    <source src="assets/audio/audio_0_welcome6.wav" type="audio/wav">
-    </audio>
 </section>
 <!-- hero section ends -->
 
 <!-- about section starts -->
 <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About Me<span.</span></h2>
+    <h2 class="heading"><i class="fas fa-user-alt" aria-hidden="true"></i> About Me</h2>
     
     <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/andrewheadshot2.jpg" alt="">
+        <img class="tilt" src="./assets/images/andrewheadshot2.jpg" alt="Portrait of Andrew Charabin" loading="lazy">
     </div>
     <div class="content">
         <h3>I'm Andrew</h3>
@@ -90,9 +84,9 @@
         <!-- h3><center>I'm Andrew</center></h3>
         <center><span class="tag">Senior Manager, Data Science</span></center> -->
 
-        <p>My speciality is leveraging data assets to accelerate business growth.
+        <p>My specialty is using data to accelerate business growth.
         I love bridging the gap between the business, project management, and development.
-        I believe a company is only as good as it's people and the structure in which they interact.
+        I believe a company is only as good as its people and the structure in which they work together.
         I value continuous improvement, supporting colleagues in their development goals,
         and enhancing collaboration and decision-making through improved structure and process.
         </p>
@@ -109,7 +103,7 @@
         </div>
         
         <div class="resumebtn">
-            <a href="./assets/pdfs/Andrew Charabin Resume.pdf" class="btn" target="_blank"><span>Resume</span>
+            <a href="./assets/pdfs/Andrew Charabin Resume.pdf" class="btn" target="_blank" rel="noopener noreferrer"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -121,12 +115,12 @@
 
 <!-- about 2 section starts -->
 <section class="about" id="myinterests">
-    <h2 class="heading"> My Interests<span.</span></h2>
+    <h2 class="heading">My Interests</h2>
 
     <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/albumcover.png" alt="">
+        <img class="tilt" src="./assets/images/albumcover.png" alt="Anywhere cover artwork" loading="lazy">
     </div>
     <div class="content">
         <h3>Anywhere</h3>
@@ -135,21 +129,20 @@
         <!-- h3><center>I'm Andrew</center></h3>
         <center><span class="tag">Senior Manager, Data Science</span></center> -->
 
-        <p>Music has always been a great passion of mine. Throughout my life, I've returned to music in times of joy, and times of stress. I have been inspired by the works of great artists, such as The Red Hot Chili Peppers, Passenger, and Vance Joy. During the pandemic, I wanted to create something special to share with loved ones. I recorded myself separately performing all instrumental parts of this song – guitar, bass, drums, and vocals. I hope you enjoy!
-        </p>
+        <p>Music has always been a great passion of mine. Throughout my life, I have returned to music in times of joy and stress. I have been inspired by artists such as the Red Hot Chili Peppers, Passenger, and Vance Joy. During the pandemic, I recorded every part of this song—guitar, bass, drums, and vocals—to share with loved ones. I hope you enjoy it!</p>
         <p>
 
         </p>
         <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/recordingpic.png" alt="">
+        <img class="tilt" src="./assets/images/recordingpic.png" alt="Andrew recording music at home" loading="lazy">
         </div>
 
-        <center>
+        <div class="audio-player">
         <audio controls>
         <source src="assets/audio/anywhere.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio>
-        </center>
+        </div>
 
     </div>
     </div>
@@ -159,33 +152,11 @@
 <!-- work project section starts -->
 <section class="work" id="work">
 
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span></span></h2>
+  <h2 class="heading"><i class="fas fa-laptop-code" aria-hidden="true"></i> Projects</h2>
 
-  <div id="project-box" class="box-container">
-    <!-- <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    </div>
-<!--
-<div class="viewall">
-  <a href="/projects" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
+  <div class="box-container">
 </div>
--->
-
+  <div class="project-list-link"><a href="./projects/" class="btn">Browse projects by category <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
 </section>
 <!-- work project section ends -->
 
@@ -193,7 +164,7 @@
 <!-- education section starts -->
 <section class="education" id="education">
 
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i><span></span> Education & Certifications</h1>
+  <h2 class="heading"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education &amp; Certifications</h2>
 
     <div class="box-container">
 
@@ -213,7 +184,7 @@
         <img draggable="false" src="./assets/images/pcap.png" alt="">
         </div>
         <div class="content">
-        <h3>PCAP™ – Certified Associate Python Programmer</h3>
+        <h3>PCAP&trade; &ndash; Certified Associate Python Programmer</h3>
         <p>Python Institute</p>
         <h4>2024</h4>
         </div>
@@ -235,7 +206,7 @@
         <img draggable="false" src="./assets/images/AWScertifiedml.png" alt="">
         </div>
         <div class="content">
-        <h3>AWS Certified Machine Learning – Specialty</h3>
+        <h3>AWS Certified Machine Learning &ndash; Specialty</h3>
         <p>Amazon Web Services</p>
         <h4>2022</h4>
         </div>
@@ -271,7 +242,7 @@
 <!-- skills section starts -->
 <section class="skills" id="skills">
 
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & Abilities<span></span></h2>
+    <h2 class="heading"><i class="fas fa-laptop-code" aria-hidden="true"></i> Skills &amp; Abilities</h2>
 
     <div class="container">
           <div class="row" id="skillsContainer">
@@ -327,7 +298,7 @@
         </div>
         <div class="desc">
             <h3>ADJ Industries</h3>
-            <p>Jun 2023 – May 2024</p>
+            <p>Jun 2023 &ndash; May 2024</p>
         </div>
       </div>
     </div>
@@ -394,48 +365,7 @@
 
 <!-- contact section starts -->
 
-<!-- remove until a later time
-
-<section class="skills" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section>
--->
-<!-- contact section ends -->
-
+</main>
 
 <!-- footer section starts -->
 
@@ -445,11 +375,11 @@
 
       <div class="box">
           <h3>Andrew's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. I'd love to connect if you share my interest in creating value with  data science 🚀<br/> <br/> </p>
+          <p>Thanks for visiting my portfolio. I would love to connect if you are interested in creating value with data science.</p>
       </div>
 
       <div class="box">
-          <h3>quick links</h3>
+          <h3>Quick links</h3>
           <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
           <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
           <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
@@ -459,34 +389,28 @@
       </div>
 
       <div class="box">
-          <h3>contact info</h3>
+          <h3>Contact information</h3>
           <p> <i class="fas fa-phone"></i>519-636-0056</p>
           <p> <i class="fas fa-envelope"></i>andrewcharabin@gmail.com</p>
           <p> <i class="fas fa-map-marked-alt"></i>Toronto, Ontario</p>
           <div class="share">
 
-              <a href="https://www.linkedin.com/in/acharabin" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/acharabin" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:andrewcharabin@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/acharabin" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
+              <a href="https://github.com/acharabin" class="fab fa-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"></a>
+              <a href="mailto:andrewcharabin@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank" rel="noopener noreferrer"></a>
           </div>
       </div>
   </div>
-
-<!--  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1>
--->
 
 </section>
 <!-- footer section ends -->
 
 <!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<a href="#home" aria-label="Scroll to top" class="fas fa-angle-up" id="scroll-top"></a>
 <!-- scroll back to top -->
 
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <!-- typed.js cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -499,11 +423,6 @@
 
 <!-- scroll reveal anim -->
 <script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 

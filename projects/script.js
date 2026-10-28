@@ -1,137 +1,76 @@
-$(document).ready(function () {
+(() => {
+  const menu = document.getElementById("menu");
+  const navigation = document.getElementById("site-navigation");
+  const scrollTop = document.getElementById("scroll-top");
+  const closeMenu = () => {
+    navigation?.classList.remove("nav-toggle");
+    menu?.classList.remove("fa-times");
+    menu?.setAttribute("aria-expanded", "false");
+    menu?.setAttribute("aria-label", "Open navigation");
+  };
 
-    $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
+  menu?.addEventListener("click", () => {
+    const open = navigation?.classList.toggle("nav-toggle") ?? false;
+    menu.classList.toggle("fa-times", open);
+    menu.setAttribute("aria-expanded", String(open));
+    menu.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+  });
+  navigation?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
+  const updateScrollTop = () => scrollTop?.classList.toggle("active", window.scrollY > 60);
+  window.addEventListener("scroll", updateScrollTop, { passive: true });
+  updateScrollTop();
 
-    $(window).on('scroll load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
+  const escapeHTML = (value = "") => String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[char]);
 
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
-        } else {
-            document.querySelector('#scroll-top').classList.remove('active');
-        }
-    });
-});
+  const container = document.querySelector(".work .box-container");
+  const filters = document.querySelector(".button-group");
+  fetch("projects.json")
+    .then((response) => {
+      if (!response.ok) throw new Error(`Could not load projects: ${response.status}`);
+      return response.json();
+    })
+    .then((projects) => {
+      const categories = [...new Set(projects.map((project) => project.category).filter(Boolean))];
+      filters.innerHTML = ["All projects", ...categories].map((label, index) =>
+        `<button class="btn${index === 0 ? " is-checked" : ""}" type="button" data-filter="${index === 0 ? "all" : escapeHTML(label)}" aria-pressed="${index === 0}">${escapeHTML(label)}</button>`
+      ).join("");
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Jigar Sable";
-            $("#favicon").attr("href", "/assets/images/favicon.png");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "/assets/images/favhand.png");
-        }
-    });
-
-
-// fetch projects start
-function getProjects() {
-    return fetch("projects.json")
-        .then(response => response.json())
-        .then(data => {
-            return data
-        });
-}
-
-
-function showProjects(projects) {
-    let projectsContainer = document.querySelector(".work .box-container");
-    let projectsHTML = "";
-    projects.forEach(project => {
-        projectsHTML += `
-        <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="${project.imagePath || `/assets/images/projects/${project.image}.png`}" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+      container.innerHTML = projects.map((project) => {
+        const image = project.imagePath || `../assets/images/projects/${project.image}.png`;
+        const view = project.links?.view
+          ? `<a href="${escapeHTML(project.links.view)}" class="btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-eye" aria-hidden="true"></i> View</a>`
+          : "";
+        const code = project.links?.code
+          ? `<a href="${escapeHTML(project.links.code)}" class="btn" target="_blank" rel="noopener noreferrer">Code <i class="fas fa-code" aria-hidden="true"></i></a>`
+          : "";
+        return `<article class="grid-item box" data-category="${escapeHTML(project.category || "Other")}">
+          <img class="project-image" src="${escapeHTML(image)}" alt="${escapeHTML(project.name)}" loading="lazy">
+          <div class="content"><div class="tag"><h3>${escapeHTML(project.name)}</h3></div>
+            <div class="desc"><p>${escapeHTML(project.desc)}</p><div class="btns">${view}${code}</div></div>
           </div>
-        </div>
-      </div>
-    </div>
-    </div>`
+        </article>`;
+      }).join("");
+
+      filters.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-filter]");
+        if (!button) return;
+        filters.querySelectorAll("button").forEach((item) => {
+          const selected = item === button;
+          item.classList.toggle("is-checked", selected);
+          item.setAttribute("aria-pressed", String(selected));
+        });
+        container.querySelectorAll(".grid-item").forEach((card) => {
+          card.hidden = button.dataset.filter !== "all" && card.dataset.category !== button.dataset.filter;
+        });
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+      container.innerHTML = '<p class="load-error">Projects could not be loaded. Please return to the home page and try again.</p>';
     });
-    projectsContainer.innerHTML = projectsHTML;
-
-    // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
-    // // vanilla tilt.js  
-
-    // /* ===== SCROLL REVEAL ANIMATION ===== */
-    // const srtop = ScrollReveal({
-    //     origin: 'bottom',
-    //     distance: '80px',
-    //     duration: 1000,
-    //     reset: true
-    // });
-
-    // /* SCROLL PROJECTS */
-    // srtop.reveal('.work .box', { interval: 200 });
-
-    // isotope filter products
-    var $grid = $('.box-container').isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'fitRows',
-        masonry: {
-            columnWidth: 200
-        }
-    });
-
-    // filter items on button click
-    $('.button-group').on('click', 'button', function () {
-        $('.button-group').find('.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-    });
-}
-
-getProjects().then(data => {
-    showProjects(data);
-})
-// fetch projects end
-
-// Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
 })();
-// End of Tawk.to Live Chat
-
-// disable developer mode
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-    }
-}

@@ -8,17 +8,17 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
-    <title>Got Lost! Page Not Found</title>
+    <link rel="icon" href="/assets/images/AClogo.png" type="image/png">
+    <title>Page Not Found | Andrew Charabin</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
 <!-- navbar starts -->
 <header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Jigar</a>
+        <a href="/" class="logo">Andrew Charabin</a>
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
+        <button id="menu" class="fas fa-bars" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation"></button>
+        <nav id="site-navigation" class="navbar" aria-label="Main navigation">
             <ul>
             <li><a href="/#home">Home</a></li>
             <li><a href="/#about">About</a></li>
@@ -26,12 +26,12 @@
             <li><a href="/#education">Education</a></li>
             <li><a href="/#work">Work</a></li>
             <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
             </ul>
         </nav>
 </header>
 <!-- navbar ends -->
 
+<main>
 <!-- 404 section start -->
 <section class="page_404">
         <div class="container">
@@ -40,8 +40,8 @@
           </div>
           
           <div class="msg">
-          <h3>Look like you're lost</h3>
-          <p>the page you are looking for not avaible!</p>
+          <h3>Looks like you're lost</h3>
+          <p>The page you are looking for could not be found.</p>
            
           <div class="backbtn">
             <a href="/" class="btn">
@@ -54,6 +54,7 @@
         </div>
 </section>
 <!-- 404 section end -->
+</main>
 
 <!-- footer section starts -->
 <section class="footer">
@@ -66,7 +67,7 @@
       </div>
 
       <div class="box">
-          <h3>quick links</h3>
+          <h3>Quick links</h3>
           <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
           <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
           <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
@@ -76,33 +77,23 @@
       </div>
 
       <div class="box">
-          <h3>contact info</h3>
+          <h3>Contact information</h3>
           <p> <i class="fas fa-phone"></i>519-636-0056</p>
           <p> <i class="fas fa-envelope"></i>andrewcharabin@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>London, Ontario</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Toronto, Ontario</p>
           <div class="share">
 
-              <a href="https://www.linkedin.com/in/acharabin" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/acharabin" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:andrewcharabin@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/acharabin" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
+              <a href="https://github.com/acharabin" class="fab fa-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"></a>
+              <a href="mailto:andrewcharabin@gmail.com" class="fas fa-envelope" aria-label="Email Andrew"></a>
           </div>
       </div>
   </div>
 
-<!--  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1>
--->
-
 </section>
 <!-- footer section ends -->
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="/assets/js/404.js"></script>
+<script src="/assets/js/404.js" defer></script>
 
 
 </body>

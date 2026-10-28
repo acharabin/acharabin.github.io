@@ -1,26 +1,23 @@
-$(document).ready(function(){
-
-    $('#menu').click(function(){
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
-});
-
-// disable developer mode
-document.onkeydown = function(e) {
-  if(e.keyCode == 123) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-     return false;
-  }
-}
+(() => {
+  const menu = document.getElementById("menu");
+  const navigation = document.getElementById("site-navigation");
+  menu?.addEventListener("click", () => {
+    const open = navigation?.classList.toggle("nav-toggle") ?? false;
+    menu.classList.toggle("fa-times", open);
+    menu.setAttribute("aria-expanded", String(open));
+    menu.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+  });
+  navigation?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+    navigation.classList.remove("nav-toggle");
+    menu?.classList.remove("fa-times");
+    menu?.setAttribute("aria-expanded", "false");
+  }));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      navigation?.classList.remove("nav-toggle");
+      menu?.classList.remove("fa-times");
+      menu?.setAttribute("aria-expanded", "false");
+      menu?.setAttribute("aria-label", "Open navigation");
+    }
+  });
+})();

@@ -7,8 +7,8 @@
   box-sizing: border-box;
   text-decoration: none;
   outline: none; border: none;
-  text-transform:capitalize;
-  transition: all .2s linear;
+
+  transition: color .2s linear, background-color .2s linear, border-color .2s linear, transform .2s linear;
 }
 html{
   font-size: 62.5%;
@@ -107,6 +107,8 @@ header .navbar ul li a:hover{
   cursor: pointer;
   color: rgb(24, 2, 63);
   display: none;
+  padding: .5rem;
+  background: transparent;
 }
 @media(max-width:768px){
   #menu{
@@ -130,7 +132,7 @@ header .navbar ul li a:hover{
     width: 100%;
     margin: 1rem 0;
     border-radius: .5rem;
-    width: 26rem;
+    max-width: 100%;
   }
   header .navbar ul li a{
     display: block;
@@ -320,7 +322,7 @@ header .navbar ul li a:hover{
   left: 0%;
   }
   .experience .container::after {
-    font-size: 2.2rem;;
+    font-size: 2.2rem;
   }
 }
 /* experience media queries ends */
@@ -459,8 +461,35 @@ header .navbar ul li a:hover{
   border-radius: 5rem;
   transition: 1s linear;
   z-index: 1000;
+  visibility: hidden;
 }
 #scroll-top.active{
   top: calc(100% - 12rem);
+  visibility: visible;
 }
 /* scroll top ends */
+header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0e2431;
+}
+.footer {
+  min-height: auto;
+  padding: 2rem 9%;
+  background: #00012b;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.footer a { color: #ffae00; }
+header,
+section[id] { scroll-margin-top: 7rem; }
+:focus-visible { outline: 3px solid #ffae00; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
