@@ -43,7 +43,7 @@
 
   if (window.Typed && document.querySelector(".typing-text") && !reduceMotion) {
     new Typed(".typing-text", {
-      strings: ["Data Science", "Analytics", "Business Strategy", "Data Strategy", "Organizational Culture", "Leadership", "Continuous Improvement", "Bayesian Statistics", "Machine Learning", "Voice AI", "Data Visualization", "Data Architecture"],
+      strings: ["AI Engineering", "Data Science", "Business Strategy", "Organizational Culture", "Leadership", "Continuous Improvement", "Machine Learning",  "Data Visualization"],
       loop: true,
       typeSpeed: 50,
       backSpeed: 25,
