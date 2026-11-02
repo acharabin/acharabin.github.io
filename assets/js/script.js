@@ -66,7 +66,8 @@
   const renderSkills = (skills) => {
     const container = document.getElementById("skillsContainer");
     if (!container) return;
-    container.innerHTML = skills.filter((skill) => skill.name).map((skill) => {
+    // Empty tiles keep each skill group aligned with the five-column grid.
+    container.innerHTML = skills.map((skill) => {
       const src = `${skill.iconprefix || ""}${skill.icon}`;
       return `<div class="bar"><div class="info"><img src="${escapeHTML(src)}" alt="" loading="lazy"><span>${escapeHTML(skill.name)}</span></div></div>`;
     }).join("");
