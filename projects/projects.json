@@ -1,7 +1,7 @@
 [
   {
-    "name": "AI Clone Voice Chat App",
-    "desc": "Chat with Andrew through a Qwen model fine-tuned with a QLoRA adapter to simulate his conversational responses, paired with his cloned voice via MCP. An in-app toggle lets you switch to OpenAI.",
+    "name": "AI Andrew Voice Chat",
+    "desc": "Chat with an AI version of Andrew, powered by a Qwen model fine-tuned with a LoRA adapter to mimic his conversational style. Responses use his cloned voice via MCP, and an in-app toggle lets you switch to an OpenAI model.",
     "imagePath": "/assets/images/projects/ac-voice-conversational-app.png",
     "category": "Voice AI",
     "buttonimage": "/assets/images/projects/github2.png",
