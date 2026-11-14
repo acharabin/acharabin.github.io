@@ -2,7 +2,7 @@
   {
     "name": "AI Andrew Voice Chat",
     "desc": "Chat with an AI version of Andrew, powered by a Qwen model fine-tuned with a LoRA adapter to mimic his conversational style. Responses use his cloned voice via MCP.",
-    "imagePath": "ac-chat",
+    "image": "ac-chat",
     "category": "Voice AI",
     "buttonimage": "/assets/images/projects/github2.png",
     "links": {
@@ -13,7 +13,7 @@
   {
     "name": "Toronto Waterfront Marathon Assistant",
     "desc": "A local conversational assistant for the 2026 Toronto Waterfront Half Marathon, combining runner result lookups with answers sourced from the event help center.",
-    "imagePath": "/assets/images/projects/toronto-marathon-arch-formatted.png",
+    "image": "toronto-marathon-arch-formatted",
     "category": "Machine Learning",
     "buttonimage": "/assets/images/invisible.png",
     "links": {
