@@ -2,7 +2,7 @@
   {
     "name": "AI Andrew Voice Chat",
     "desc": "Chat with an AI version of Andrew, powered by a Qwen model fine-tuned with a LoRA adapter to mimic his conversational style. Responses use his cloned voice via MCP.",
-    "imagePath": "/assets/images/projects/ac-chat.png",
+    "imagePath": "ac-chat",
     "category": "Voice AI",
     "buttonimage": "/assets/images/projects/github2.png",
     "links": {
@@ -35,7 +35,7 @@
   {
     "name": "NFL Down Outcome Prediction",
     "desc": "A neural network framework to model the underlying markov chain process in NFL down outcomes.",
-    "image": "/assets/images/projects/nfl2.png",
+    "image": "nfl2",
     "category": "Machine Learning",
     "buttonimage": "/assets/images/invisible.png",
     "links": {
